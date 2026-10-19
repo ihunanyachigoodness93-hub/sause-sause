@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saucy Spoon | Food and Drink</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg site-navbar">
+        <div class="container">
+
+            <a class="navbar-brand brand" href="index.html">
+                Saucy Spoon<span>🍗</span>
+            </a>
+
+            <button class="navbar-toggler bg-light" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <div class="navbar-nav ms-auto align-items-lg-center">
+                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link" href="menu.html">Menu</a>
+
+                    <a class="nav-link" href="cart.html">
+                        My Cart 🛒
+                        <span id="cartCount" class="cart-badge">0</span>
+                    </a>
+
+                    <a class="nav-link" href="contact.html">Contact</a>
+
+                    <a href="login.html" class="juwie-btn ms-lg-3">
+                        Login
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="home-hero">
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6 hero-text">
+
+                    <p class="section-label">WELCOME TO SAUCY SPOON</p>
+
+                    <h1>
+                        Good Food.<br>
+                        <span>Great Mood.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        From delicious Nigerian meals to tasty snacks
+                        and refreshing drinks, we bring happiness to
+                        every plate.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="menu.html" class="juwie-btn">
+                            Explore Our Menu →
+                        </a>
+
+                        <a href="contact.html" class="outline-btn">
+                            Contact Us
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div>
+                            <h3>Fresh</h3>
+                            <p>Ingredients</p>
+                        </div>
+
+                        <div>
+                            <h3>Tasty</h3>
+                            <p>Meals & Snacks</p>
+                        </div>
+
+                        <div>
+                            <h3>Easy</h3>
+                            <p>WhatsApp Orders</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="hero-image-wrapper">
+
+                        <img
+                            src="images/milkshake.avif"
+                            alt="Fresh and delicious food"
+                            class="home-hero-image"
+                        >
+
+                        <div class="floating-card">
+                            <span>🍗</span>
+                            <div>
+                                <strong>Made with love</strong>
+                                <p>Served with happiness</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section-padding">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <p class="section-label">OUR SPECIALTIES</p>
+                <h2 class="section-title">Something Delicious for You</h2>
+                <p class="section-description">
+                    Explore meals, snacks and drinks made for every craving.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <a href="menu.html#meals" class="category-card">
+                        <img
+                            src="images/jeloff.jpeg"
+                            alt="Rice meal"
+                        >
+                        <div class="category-overlay">
+                            <h3>🍛 Main Meals</h3>
+                            <p>Discover our delicious meals</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="menu.html#snacks" class="category-card">
+                        <img
+                            src="images/samosa.avif"
+                            alt="Tasty snacks"
+                        >
+                        <div class="category-overlay">
+                            <h3>🥟 Tasty Snacks</h3>
+                            <p>Little bites, big happiness</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="menu.html#drinks" class="category-card">
+                        <img
+                            src="images/juice.avif"
+                            alt="Refreshing drink"
+                        >
+                        <div class="category-overlay">
+                            <h3>🥤 Cool Drinks</h3>
+                            <p>Refresh yourself</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section-padding featured-section">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-5">
+                <div>
+                    <p class="section-label">CUSTOMER FAVOURITES</p>
+                    <h2 class="section-title mb-0">Popular Picks</h2>
+                </div>
+
+                <a href="menu.html" class="outline-btn">View Full Menu →</a>
+            </div>
+
+            <div class="row g-4" id="featuredFoods"></div>
+
+        </div>
+    </section>
+
+
+    <section class="cta-section">
+        <div class="container text-center">
+            <p class="section-label">HUNGRY ALREADY?</p>
+
+            <h2>Let Something Delicious Find You.</h2>
+
+            <p>
+                Choose your favourites and place your order in just a few clicks.
+            </p>
+
+            <a href="menu.html" class="juwie-btn">
+                Order Your Favourite Food
+            </a>
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <a class="brand" href="index.html">
+                Saucy Spoon<span>🍗</span>
+            </a>
+
+            <p class="mt-3 mb-0">
+                © 2026 Saucy Spoon | Food and Drink. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <a href="#" class="whatsapp-float" id="whatsappLink">
+        WhatsApp Us
+    </a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

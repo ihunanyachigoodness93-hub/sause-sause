@@ -1,0 +1,101 @@
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    background:
+        linear-gradient(#1c100be0, #1c100bf0),
+        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=85') center/cover;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 440px;
+}
+
+.login-brand {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.login-brand h1 {
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.login-brand h1 span {
+    font-size: 30px;
+}
+
+.login-brand p {
+    color: var(--orange);
+    letter-spacing: 5px;
+    font-size: 11px;
+}
+
+.login-card {
+    background: #24150ef5;
+    border: 1px solid var(--border);
+    padding: 38px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px #00000055;
+}
+
+.login-card h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    color: var(--muted);
+    margin-bottom: 28px;
+}
+
+.login-card .form-label {
+    color: var(--cream);
+    font-size: 13px;
+}
+
+.signup-text {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.signup-text a {
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.login-divider {
+    border-top: 1px solid var(--border);
+    margin-top: 25px;
+    padding-top: 20px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.login-copyright {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+#loginMessage {
+    color: var(--orange);
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 25px 20px;
+    }
+
+    .login-brand h1 {
+        font-size: 35px;
+    }
+}
